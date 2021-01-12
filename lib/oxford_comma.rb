@@ -11,7 +11,7 @@ def oxford_comma(array)
       num_of_elements = array.count
       last_index_count = num_of_elements - 1
       array_last_element = array
-      array_last_element[last_index_count] = " and " + array.last
+      array_last_element[last_index_count] = "and " + array.last
       #puts "#{array_last_element}"
       puts "#{array_last_element.join(", ")}"
   end
