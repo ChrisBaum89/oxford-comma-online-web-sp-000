@@ -1,5 +1,5 @@
 
-#array = ["kiwi", "durian", "starfruit"]
+
 def oxford_comma(array)
   array_last_element = Array.new
   case
@@ -8,14 +8,11 @@ def oxford_comma(array)
     when array.count == 2
       array.join(" and ")
     when array.count > 2
-      num_of_elements = array.count
-      last_index_count = num_of_elements - 1
-      array_last_element = array
-      array_last_element[last_index_count] = "and " + array.last
-      #puts "#{array_last_element}"
-      #puts "#{array_last_element.join(", ")}"
-      array_last_element.join(", ")
+      num_of_elements = array.count #count number of elements in array
+      last_index_count = num_of_elements - 1 #get index # of final element
+      array_last_element = array #copy array
+      array_last_element[last_index_count] = "and " + array.last #change last element to add "and "
+      array_last_element.join(", ") #add commas and convert to string
   end
 end
 
-#oxford_comma(array)
