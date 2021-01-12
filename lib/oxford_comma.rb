@@ -1,3 +1,5 @@
+
+array = ["kiwi", "durian", "starfruit"]
 def oxford_comma(array)
   array_last_element = Array.new
   case
@@ -11,3 +13,5 @@ def oxford_comma(array)
       array.join
   end
 end
+
+oxford_comma(array)
