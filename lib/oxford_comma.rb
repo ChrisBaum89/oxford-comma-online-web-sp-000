@@ -15,4 +15,3 @@ def oxford_comma(array)
       array_last_element.join(", ") #add commas and convert to string
   end
 end
-
