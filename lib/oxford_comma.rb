@@ -10,6 +10,7 @@ def oxford_comma(array)
     when array.count > 2
       num_of_elements = array.count
       last_index_count = num_of_elements - 1
+      array_last_element = array
       array_last_element[last_index_count] = " and " + array.last
       puts "#{array_last_element}"
   end
